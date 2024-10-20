@@ -11,75 +11,35 @@
         android:id="@+id/getTracksButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
         android:text="getTracksButton"
-        app:layout_constraintBottom_toTopOf="@+id/getTrackButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.879"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/getTrackButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="getTrackButton"
-        app:layout_constraintBottom_toTopOf="@+id/addTrackButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.852"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/addTrackButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="addTrackButton"
-        app:layout_constraintBottom_toTopOf="@+id/deleteTrackButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.865"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/deleteTrackButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="deleteTrackButton"
-        app:layout_constraintBottom_toTopOf="@+id/updateTrackButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.902"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/responseTextView"
-        android:layout_width="318dp"
-        android:layout_height="325dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/getTracksButton"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/updateTrackButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="200dp"
-        android:layout_marginBottom="100dp"
-        android:text="updateTrackButton"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/getTracksButton" />
 
     <EditText
         android:id="@+id/nameTrackText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="400dp"
         android:ems="10"
         android:hint="nameTrack"
         android:inputType="text"
         app:layout_constraintEnd_toStartOf="@+id/getTracksButton"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/responseTextView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/singerText"
@@ -94,14 +54,13 @@
         app:layout_constraintTop_toBottomOf="@+id/nameTrackText"
         app:layout_constraintVertical_bias="0.0" />
 
-    <EditText
-        android:id="@+id/idText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:ems="10"
-        android:hint="Id (for Update/GetTrack)"
-        android:inputType="text"
-        app:layout_constraintTop_toBottomOf="@+id/singerText"
-        tools:layout_editor_absoluteX="0dp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerId"
+        android:layout_width="273dp"
+        android:layout_height="256dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.231"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

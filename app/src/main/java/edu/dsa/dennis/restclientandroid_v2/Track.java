@@ -3,14 +3,9 @@ package edu.dsa.dennis.restclientandroid_v2;
 import com.google.gson.annotations.SerializedName;
 
 public class Track {
-    @SerializedName("id")
-    private String id;
-
-    @SerializedName("title")
-    private String title;
-
-    @SerializedName("singer")
-    private String singer;
+    String id;
+    String title;
+    String singer;
 
     public Track(String title, String singer) {
         this.title = title;
